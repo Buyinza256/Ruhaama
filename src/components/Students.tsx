@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import { images } from "../config/images.js";
 import Gallery from "./Gallery.tsx";
 
 type Props = {};
 
 const Students = (props: Props) => {
-  const [gallery, setGallery] = useState(false);
-  const handleOpenGallery = () => {
-    setGallery(true);
-  };
+  // const [gallery, setGallery] = useState(false);
+  // const handleOpenGallery = () => {
+  //   setGallery(true);
+  // };
   return (
     <div className="max-w-[1350px] mx-auto py-16 p-4 text-center bg-gray-200">
       <h1 className="text-shadow">Meet Our Esteemed Students</h1>
