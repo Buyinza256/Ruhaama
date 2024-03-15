@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="w-full bg-gray-100 py-16">
       <div className="max-w-[1240px] mx-auto flex flex-col px-4">
-        <div className="sm:flex text-center justify-between items-center">
+        <div className="sm:flex text-center justify-between sm:justify-center sm:p-6 items-center">
           <div className="px-2">
             <img
               className="inline shadow-lg shadow-indigo-500/50"
@@ -17,7 +17,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex justify-between">
-          <ul className="lg:flex">
+          <ul className="w-[45%] lg:flex sm:border-r-2">
             <li>
               {" "}
               <a href="#main-section">Home</a>

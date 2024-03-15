@@ -15,7 +15,7 @@
   }
 
   li {
-    @apply p-4;
+    @apply p-4 ;
   }
   h1 {
     @apply text-3xl md:text-4xl font-bold;
@@ -35,6 +35,10 @@
 
   .icon {
     @apply text-2xl cursor-pointer;
+  }
+
+  .staff-icon {
+    @apply text-6xl cursor-pointer;
   }
 }
 

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaChalkboardTeacher } from "react-icons/fa";
 
 type Props = {};
 
@@ -11,37 +12,285 @@ const Staff = (props: Props) => {
 
   // Dummy data for teachers
   const teachers = [
-    { id: 1, name: "NAJUNA ABETH", position: "TEACHER", image: null },
-    { id: 2, name: "WEBAZE DAN", position: "TEACHER", image: null },
-    { id: 3, name: "MWESIGYE JULIUS", position: "TEACHER", image: null },
-    { id: 4, name: "MUCUREEZI ZAKARIYA", position: "TEACHER", image: null },
-    { id: 5, name: "NINSIIMA GIFT<", position: "TEACHER", image: null },
-    { id: 6, name: "TURYATUNGA JULIUS", position: "TEACHER", image: null },
-    { id: 7, name: "AIJUKA JOSHUA", position: "TEACHER", image: null },
-    { id: 8, name: "KARATUNGYE ELIAS", position: "TEACHER", image: null },
-    { id: 9, name: "KANYESIGYE PEDSON", position: "TEACHER", image: null },
-    { id: 10, name: "BUKABEEBA STANLEY", position: "TEACHER", image: null },
-    { id: 11, name: "MUGUME CHARLES", position: "TEACHER", image: null },
-    { id: 12, name: "AGABA PHILEMON", position: "TEACHER", image: null },
-    { id: 13, name: "TWIJUKYE AARON", position: "TEACHER", image: null },
-    { id: 14, name: "MUCUNGUZI JAMES", position: "TEACHER", image: null },
-    { id: 15, name: "ZIRABA TOMSON", position: "TEACHER", image: null },
-    { id: 16, name: "TUSIIME LOYCE", position: "TEACHER", image: null },
-    { id: 17, name: "ATURINDE SOSTENE", position: "TEACHER", image: null },
-    { id: 18, name: "MPAMIRE NICHOLAS", position: "TEACHER", image: null },
-    { id: 19, name: "KAMURASI CALEB", position: "TEACHER", image: null },
-    { id: 20, name: "LODIGO ADOLPH", position: "TEACHER", image: null },
-    { id: 21, name: "KATEGA STUART", position: "TEACHER", image: null },
-    { id: 22, name: "KANYESIGYE GLORIOUS", position: "TEACHER", image: null },
-    { id: 23, name: "KAPASIKA AGNES", position: "TEACHER", image: null },
-    { id: 24, name: "GUMISIRIZA RESTY", position: "TEACHER", image: null },
-    { id: 25, name: "ACHIEVEMENT BRIAN", position: "TEACHER", image: null },
-    { id: 26, name: "NYESIGA JORAM", position: "TEACHER", image: null },
-    { id: 27, name: "MUGUME BENARD", position: "TEACHER", image: null },
-    { id: 27, name: "AHIMBISIBWE DENIS", position: "TEACHER", image: null },
-    { id: 27, name: "ANYIKIRIZA INNOCENT", position: "TEACHER", image: null },
-    { id: 27, name: "MWINE FRANCISCO<", position: "TEACHER", image: null },
-    { id: 27, name: "David Johnson", position: "English Teacher", image: null },
+    {
+      id: 1,
+      name: "NAJUNA ABETH",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 2,
+      name: "WEBAZE DAN",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 3,
+      name: "MWESIGYE JULIUS",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 4,
+      name: "MUCUREEZI ZAKARIYA",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 5,
+      name: "NINSIIMA GIFT<",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 6,
+      name: "TURYATUNGA JULIUS",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 7,
+      name: "AIJUKA JOSHUA",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 8,
+      name: "KARATUNGYE ELIAS",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 9,
+      name: "KANYESIGYE PEDSON",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 10,
+      name: "BUKABEEBA STANLEY",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 11,
+      name: "MUGUME CHARLES",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 12,
+      name: "AGABA PHILEMON",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 13,
+      name: "TWIJUKYE AARON",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 14,
+      name: "MUCUNGUZI JAMES",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 15,
+      name: "ZIRABA TOMSON",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 16,
+      name: "TUSIIME LOYCE",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 17,
+      name: "ATURINDE SOSTENE",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 18,
+      name: "MPAMIRE NICHOLAS",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 19,
+      name: "KAMURASI CALEB",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 20,
+      name: "LODIGO ADOLPH",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 21,
+      name: "KATEGA STUART",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 22,
+      name: "KANYESIGYE GLORIOUS",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 23,
+      name: "KAPASIKA AGNES",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 24,
+      name: "GUMISIRIZA RESTY",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 25,
+      name: "ACHIEVEMENT BRIAN",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 26,
+      name: "NYESIGA JORAM",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 27,
+      name: "MUGUME BENARD",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 27,
+      name: "AHIMBISIBWE DENIS",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 27,
+      name: "ANYIKIRIZA INNOCENT",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 27,
+      name: "MWINE FRANCISCO<",
+      position: "TEACHER",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
+    {
+      id: 27,
+      name: "David Johnson",
+      position: "English Teacher",
+      image: null,
+      icon: (
+        <FaChalkboardTeacher className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
+    },
     // Add more teachers as needed
   ];
 
@@ -51,30 +300,35 @@ const Staff = (props: Props) => {
       name: "Mr.UMUTOREINE NICHOLAS",
       position: "Head Teacher",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
     {
       id: 2,
       name: "BAAINOMUGISHA PATRICK ",
       position: "DEPUTY HEADTEACHER IN CHARGE OF ACADEMICS",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
     {
       id: 3,
       name: "NDYABAHIKA GEORGE",
       position: " DEPUTY HEADTEACHER INCHARGE OF DISCIPLINE",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
     {
       id: 4,
       name: "MUYAMBI AMON",
       position: "DIRECTOR OF STUDIES",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
     {
       id: 5,
       name: "ARINDA PRECIOUS",
       position: " SCHOOL SECRETARY",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
 
     // Add more teachers as needed
@@ -85,6 +339,7 @@ const Staff = (props: Props) => {
       name: "REV. CAN JULIET BARIGYE",
       position: "CHAPLAIN",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
 
     // Add more teachers as needed
@@ -95,6 +350,7 @@ const Staff = (props: Props) => {
       name: "NAMANYA EMILY",
       position: "SCHOOL LIBRARIAN",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
 
     {
@@ -102,6 +358,7 @@ const Staff = (props: Props) => {
       name: "TURYOMURUGYENDO DOROTH",
       position: "TAILORING INSTRUCTOR",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
 
     {
@@ -109,6 +366,7 @@ const Staff = (props: Props) => {
       name: "ARINAITWE LATONA",
       position: "SCHOOL NURSE",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
 
     {
@@ -116,6 +374,7 @@ const Staff = (props: Props) => {
       name: "AKAMPWERA SOPHIA",
       position: "SALOON INSTRUCTOR",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
 
     {
@@ -123,6 +382,7 @@ const Staff = (props: Props) => {
       name: "TUMUSHABE SHALLON",
       position: "MATRON",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
 
     {
@@ -130,6 +390,7 @@ const Staff = (props: Props) => {
       name: " AKORABIRUNGI BENJAMIN",
       position: "STORE KEEPER",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
 
     {
@@ -137,6 +398,7 @@ const Staff = (props: Props) => {
       name: "    TWESIGYE CHRISTOPHER",
       position: "COOK",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
 
     {
@@ -144,6 +406,7 @@ const Staff = (props: Props) => {
       name: "BAHAME JOHN",
       position: "COOK",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
 
     {
@@ -151,6 +414,7 @@ const Staff = (props: Props) => {
       name: "NAMAARA JACENTA",
       position: "COOK",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
 
     {
@@ -158,6 +422,7 @@ const Staff = (props: Props) => {
       name: "  ASIIMWE JOHNSON",
       position: "COOK",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
 
     {
@@ -165,6 +430,7 @@ const Staff = (props: Props) => {
       name: "NABATANZI FLORENCE",
       position: "COOK",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
 
     {
@@ -172,6 +438,7 @@ const Staff = (props: Props) => {
       name: "MUHEREZA WILLIAM",
       position: " COOK",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
 
     {
@@ -179,6 +446,7 @@ const Staff = (props: Props) => {
       name: "MUHAIRWE ALFRED",
       position: "ASKARI",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
 
     {
@@ -186,6 +454,7 @@ const Staff = (props: Props) => {
       name: " EBENU BOSCO",
       position: "ASKARI",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
 
     {
@@ -193,6 +462,7 @@ const Staff = (props: Props) => {
       name: " BETUNGURA LIVING",
       position: "ASKARI",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
 
     {
@@ -200,6 +470,7 @@ const Staff = (props: Props) => {
       name: "TWINAMASIKO BRIGHT",
       position: "COMPOUND",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
 
     {
@@ -207,6 +478,7 @@ const Staff = (props: Props) => {
       name: "TWINAMASIKO BRIGHT",
       position: "COMPOUND",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
 
     {
@@ -214,6 +486,7 @@ const Staff = (props: Props) => {
       name: "RUGOGAMU BESTON",
       position: "PORTER",
       image: null,
+      icon: <FaChalkboardTeacher className="icon" />,
     },
   ];
 
@@ -309,11 +582,18 @@ const Staff = (props: Props) => {
                         key={index}
                         className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center"
                       >
-                        <img
-                          src={teacher?.image ? teacher.image : "userIcon"}
-                          alt={teacher.name}
-                          className="w-24 h-24 rounded-full mb-4"
-                        />
+                        {teacher?.image ? (
+                          <img
+                            src={teacher?.image ? teacher.image : ""}
+                            alt={teacher.name}
+                            className="w-24 h-24 rounded-full mb-4"
+                          />
+                        ) : (
+                          <div className="w-24 h-24 rounded-full mb-4 flex justify-center items-center">
+                            {teacher.icon}
+                          </div>
+                        )}
+
                         <h2 className="text-xl font-semibold">
                           {teacher.name}
                         </h2>
