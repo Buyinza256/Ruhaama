@@ -73,8 +73,10 @@ const About = () => {
               </div>
             </div>
             <div>
-              <h4 className="ml-4">Title</h4>
-              <ul className="border-s-8 border-b-gray-100">
+              <h4 className="ml-4">
+                <b>FOUNDATION</b>
+              </h4>
+              <ul className="border-s-8 border-b-gray-100 flex flex-col">
                 {about_info.map((item, index) => (
                   <li key={index}>
                     {item.title}:
@@ -86,9 +88,9 @@ const About = () => {
 
             <div>
               <h4 className="ml-4 font-bold"> BOARD OF GOVERNERS </h4>
-              <ul className="border-s-8 border-b-gray-100">
+              <ul className="border-s-8 border-b-gray-100 flex flex-col">
                 {governers.map((item, index) => (
-                  <li key={index}>
+                  <li key={index} className="mb-[-1rem]">
                     {item.title}:
                     <span className="font-bold italic">{item.description}</span>
                   </li>
@@ -98,9 +100,9 @@ const About = () => {
 
             <div>
               <h4 className="ml-4 font-bold">HEAD TEACHERS </h4>
-              <ul className="border-s-8 border-b-gray-100">
+              <ul className="border-s-8 border-b-gray-100 flex flex-col">
                 {head_teachers.map((item, index) => (
-                  <li key={index}>
+                  <li key={index} className="mb-[-1rem]">
                     {item.title}:
                     <span className="font-bold italic">
                       {item.period_of_service}
@@ -112,18 +114,15 @@ const About = () => {
 
             <div>
               <h4 className="ml-4">Title</h4>
-              <ul className="border-s-8 border-b-gray-100">
+              <ul className="border-s-8 border-b-gray-100 flex flex-col">
                 {about_info.map((item, index) => (
-                  <li key={index}>
+                  <li key={index} className="mb-[-1rem]">
                     {item.title}:
                     <span className="font-bold italic">{item.description}</span>
                   </li>
                 ))}
               </ul>
             </div>
-          </div>
-          <div className="w-full flex justify-center">
-            <button className="rounded-full ">More Information</button>
           </div>
         </div>
       </div>
