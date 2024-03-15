@@ -1,7 +1,6 @@
 import {} from "@gsap/react";
 import { Power3, TweenMax } from "gsap";
 import React, { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
 import img_logo from "../assets/logos/LOGO RSS.jpg  5.png";
 
 const NavBar = () => {
@@ -37,16 +36,20 @@ const NavBar = () => {
       </div>
       <ul className="flex gap-12 text-white opacity-0" ref={(el) => (ref = el)}>
         <li className="text-lg duration-300 transition ease-in delay-150 hover:underline cursor-pointer box">
-          <Link to="/main-section">Home</Link>
+          <a href="#main-section">Home</a>
+        </li>
+
+        <li className="text-lg duration-300 transition ease-in delay-150 hover:underline cursor-pointer box">
+          <a href="#students">Students</a>
         </li>
         <li className="text-lg duration-300 transition ease-in delay-150 hover:underline cursor-pointer box">
-          <Link to="/about">About</Link>
+          <a href="#staff">Staff</a>
         </li>
         <li className="text-lg duration-300 transition ease-in delay-150 hover:underline cursor-pointer box">
-          <Link to="/contact">Contact Us</Link>
+          <a href="#about">About</a>
         </li>
-        <li className="text-lg duration-300 transition ease-in delay-150 hover:underline cursor-pointer    box">
-          <Link to="/documents">Documents</Link>
+        <li className="text-lg duration-300 transition ease-in delay-150 hover:underline cursor-pointer box">
+          <a href="#contact">Contact Us</a>
         </li>
       </ul>
     </nav>

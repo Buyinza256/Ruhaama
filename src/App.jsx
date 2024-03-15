@@ -1,4 +1,3 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./components/About";
 import ContactUsPage from "./components/ContactUsPage.tsx";
 import Footer from "./components/Footer.tsx";
@@ -8,9 +7,8 @@ import Students from "./components/Students.tsx";
 
 function App() {
   return (
-    <BrowserRouter basename="/">
-      {/* Specify the basename here */}
-      <div className="w-full h-[95vh] mx-auto p-4 main-bg-img bg-cover bg-center">
+    <div className="w-full h-[95vh] mx-auto p-4 main-bg-img bg-cover bg-center">
+      <div id="main-section">
         <NavBar />
         <main className="">
           <div className="flex flex-col justify-center items-center h-[85vh] w-[65%] mx-auto gap-4 lg:flex-col">
@@ -28,24 +26,28 @@ function App() {
             </div>
           </div>
         </main>
-        <Students />
-        <Staff />
-
-        <About />
-
-        <ContactUsPage />
-
-        <Footer />
-
-        <Routes>
-          <Route path="/students" element={<Students />} />
-          <Route path="/staff" element={<Staff />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<ContactUsPage />} />
-          <Route path="/footer" element={<Footer />} />
-        </Routes>
       </div>
-    </BrowserRouter>
+
+      <div id="students">
+        <Students />
+      </div>
+
+      <div id="staff">
+        <Staff />
+      </div>
+
+      <div id="about">
+        <About />
+      </div>
+
+      <div id="contact">
+        <ContactUsPage />
+      </div>
+
+      <div id="footer">
+        <Footer />
+      </div>
+    </div>
   );
 }
 

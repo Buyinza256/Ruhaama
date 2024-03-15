@@ -18,11 +18,24 @@ const Footer = () => {
         </div>
         <div className="flex justify-between">
           <ul className="lg:flex">
-            <li>Home</li>
-            <li>Students</li>
-            <li>About</li>
-            <li>Background</li>
-            <li>Contact</li>
+            <li>
+              {" "}
+              <a href="#main-section">Home</a>
+            </li>
+            <li>
+              {" "}
+              <a href="#students">Students</a>
+            </li>
+            <li>
+              <a href="#staff">Staff</a>
+            </li>
+            <li>
+              {" "}
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#contact">Contact Us</a>
+            </li>
           </ul>
           <div className="flex justify-between w-full sm:max-w-[280px] my-4">
             <FaFacebook className="icon" />
