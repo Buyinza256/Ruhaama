@@ -45,7 +45,44 @@ const NavBar = () => {
         />
       </div>
 
-      <div className="md:hidden z-10">
+      <ul
+        className="gap-12 text-white opacity-0 hidden md:flex"
+        ref={(el) => (ref = el)}
+      >
+        <li
+          className="text-lg duration-300 transition ease-in delay-150 hover:underline cursor-pointer box"
+          onClick={handleNav}
+        >
+          <a href="#main-section">Home</a>
+        </li>
+
+        <li
+          className="text-lg duration-300 transition ease-in delay-150 hover:underline cursor-pointer box"
+          onClick={handleNav}
+        >
+          <a href="#students">Students</a>
+        </li>
+        <li
+          className="text-lg duration-300 transition ease-in delay-150 hover:underline cursor-pointer box"
+          onClick={handleNav}
+        >
+          <a href="#staff">Staff</a>
+        </li>
+        <li
+          className="text-lg duration-300 transition ease-in delay-150 hover:underline cursor-pointer box"
+          onClick={handleNav}
+        >
+          <a href="#about">About</a>
+        </li>
+        <li
+          className="text-lg duration-300 transition ease-in delay-150 hover:underline cursor-pointer box"
+          onClick={handleNav}
+        >
+          <a href="#contact">Contact Us</a>
+        </li>
+      </ul>
+
+      <div className={`md:hidden z-10 `}>
         {nav ? (
           <AiOutlineClose
             onClick={handleNav}
@@ -64,16 +101,13 @@ const NavBar = () => {
         className={
           nav
             ? "absolute left-0 top-0 w-full bg-gray-100/90 px-4 py-7 flex-col text-black z-5"
-            : "absolute left-[-100%]"
+            : ""
         }
       >
         <ul
           className={
-            nav
-              ? "mt-4 flex gap-12 text-white opacity-0"
-              : "flex gap-12 text-white opacity-0"
+            nav ? "mt-4 flex gap-12 text-white" : " absolute left-[-100%]"
           }
-          ref={(el) => (ref = el)}
         >
           <li
             className="text-lg duration-300 transition ease-in delay-150 hover:underline cursor-pointer box"
