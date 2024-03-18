@@ -44,35 +44,35 @@ export const images = [
   //     title: "Laptop",
   //   },
   {
-    img: image8,
+    url: image8,
     title: "Doors",
   },
   {
-    img: image9,
+    url: image9,
     title: "Coffee",
   },
   {
-    img: image10,
+    url: image10,
     title: "Storage",
   },
   {
-    img: image11,
+    url: image11,
     title: "Candle",
   },
   {
-    img: image12,
+    url: image12,
     title: "Coffee table",
   },
   {
-    img: image13,
+    url: image13,
     title: "Coffee table",
   },
   {
-    img: image14,
+    url: image14,
     title: "Coffee table",
   },
   {
-    img: image15,
+    url: image15,
     title: "Coffee table",
   },
 ];

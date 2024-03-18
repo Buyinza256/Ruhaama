@@ -10,9 +10,9 @@ const Students = (props: Props) => {
   //   setGallery(true);
   // };
   return (
-    <div className="max-w-[1350px] mx-auto py-16 p-4 text-center bg-gray-200">
+    <div className="max-w-[1350px] h-[150vh] overflow-hidden mx-auto py-16 p-4 text-center bg-gray-200">
       <h1 className="text-shadow">Meet Our Esteemed Students</h1>
-      <p className="py-4">The life that moves our institution</p>
+      <p className="py-4 font-semibold">The life that moves our institution</p>
 
       {/* <div className="grid grid-rows-none md:grid-cols-5 py-4 gap-2 md:gap-4 lg:h-[65vh]">
         <img
@@ -52,8 +52,8 @@ const Students = (props: Props) => {
       </div> */}
 
       {/* {gallery && ( */}
-      <div className="">
-        <Gallery itemData={images} />
+      <div className="h-full">
+        <Gallery images={images} />
       </div>
       {/* )} */}
     </div>

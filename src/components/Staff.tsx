@@ -1,5 +1,19 @@
 import React, { useState } from "react";
-import { FaChalkboardTeacher } from "react-icons/fa";
+import {
+  FaChalkboardTeacher,
+  FaChurch,
+  FaFlipboard,
+  FaUserNurse,
+} from "react-icons/fa";
+import {
+  GiChefToque,
+  GiClothes,
+  GiReceiveMoney,
+  GiSaloon,
+} from "react-icons/gi";
+import { GrShieldSecurity } from "react-icons/gr";
+import { IoLibrary } from "react-icons/io5";
+import { MdCleaningServices, MdOutlineStorefront } from "react-icons/md";
 
 type Props = {};
 
@@ -23,7 +37,7 @@ const Staff = (props: Props) => {
     },
     {
       id: 2,
-      name: "WEBAZE DAN",
+      name: "TWEBAZE DAN",
       position: "TEACHER",
       image: null,
       icon: (
@@ -297,14 +311,14 @@ const Staff = (props: Props) => {
   const staffHeads = [
     {
       id: 1,
-      name: "Mr.UMUTOREINE NICHOLAS",
+      name: "Mr. Tumutoreine Nicholas",
       position: "Head Teacher",
       image: null,
       icon: <FaChalkboardTeacher className="icon" />,
     },
     {
       id: 2,
-      name: "BAAINOMUGISHA PATRICK ",
+      name: "Bainomugisha Patrick ",
       position: "DEPUTY HEADTEACHER IN CHARGE OF ACADEMICS",
       image: null,
       icon: <FaChalkboardTeacher className="icon" />,
@@ -330,7 +344,13 @@ const Staff = (props: Props) => {
       image: null,
       icon: <FaChalkboardTeacher className="icon" />,
     },
-
+    {
+      id: 6,
+      name: "AHARIZIRA MOREEN",
+      position: " SCHOOL BURSAR",
+      image: null,
+      icon: <GiReceiveMoney className="icon" />,
+    },
     // Add more teachers as needed
   ];
   const religous = [
@@ -339,7 +359,7 @@ const Staff = (props: Props) => {
       name: "REV. CAN JULIET BARIGYE",
       position: "CHAPLAIN",
       image: null,
-      icon: <FaChalkboardTeacher className="icon" />,
+      icon: <FaChurch className="staff-icon" style={{ opacity: 0.8 }} />,
     },
 
     // Add more teachers as needed
@@ -350,7 +370,7 @@ const Staff = (props: Props) => {
       name: "NAMANYA EMILY",
       position: "SCHOOL LIBRARIAN",
       image: null,
-      icon: <FaChalkboardTeacher className="icon" />,
+      icon: <IoLibrary className="staff-icon" style={{ opacity: 0.8 }} />,
     },
 
     {
@@ -358,7 +378,7 @@ const Staff = (props: Props) => {
       name: "TURYOMURUGYENDO DOROTH",
       position: "TAILORING INSTRUCTOR",
       image: null,
-      icon: <FaChalkboardTeacher className="icon" />,
+      icon: <GiClothes className="staff-icon" style={{ opacity: 0.8 }} />,
     },
 
     {
@@ -366,7 +386,7 @@ const Staff = (props: Props) => {
       name: "ARINAITWE LATONA",
       position: "SCHOOL NURSE",
       image: null,
-      icon: <FaChalkboardTeacher className="icon" />,
+      icon: <FaUserNurse className="staff-icon" style={{ opacity: 0.8 }} />,
     },
 
     {
@@ -374,7 +394,7 @@ const Staff = (props: Props) => {
       name: "AKAMPWERA SOPHIA",
       position: "SALOON INSTRUCTOR",
       image: null,
-      icon: <FaChalkboardTeacher className="icon" />,
+      icon: <GiSaloon className="staff-icon" style={{ opacity: 0.8 }} />,
     },
 
     {
@@ -382,7 +402,7 @@ const Staff = (props: Props) => {
       name: "TUMUSHABE SHALLON",
       position: "MATRON",
       image: null,
-      icon: <FaChalkboardTeacher className="icon" />,
+      icon: <FaFlipboard className="staff-icon" style={{ opacity: 0.8 }} />,
     },
 
     {
@@ -390,7 +410,9 @@ const Staff = (props: Props) => {
       name: " AKORABIRUNGI BENJAMIN",
       position: "STORE KEEPER",
       image: null,
-      icon: <FaChalkboardTeacher className="icon" />,
+      icon: (
+        <MdOutlineStorefront className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
     },
 
     {
@@ -398,7 +420,7 @@ const Staff = (props: Props) => {
       name: "    TWESIGYE CHRISTOPHER",
       position: "COOK",
       image: null,
-      icon: <FaChalkboardTeacher className="icon" />,
+      icon: <GiChefToque className="staff-icon" style={{ opacity: 0.8 }} />,
     },
 
     {
@@ -406,7 +428,7 @@ const Staff = (props: Props) => {
       name: "BAHAME JOHN",
       position: "COOK",
       image: null,
-      icon: <FaChalkboardTeacher className="icon" />,
+      icon: <GiChefToque className="staff-icon" style={{ opacity: 0.8 }} />,
     },
 
     {
@@ -414,7 +436,7 @@ const Staff = (props: Props) => {
       name: "NAMAARA JACENTA",
       position: "COOK",
       image: null,
-      icon: <FaChalkboardTeacher className="icon" />,
+      icon: <GiChefToque className="staff-icon" style={{ opacity: 0.8 }} />,
     },
 
     {
@@ -422,7 +444,7 @@ const Staff = (props: Props) => {
       name: "  ASIIMWE JOHNSON",
       position: "COOK",
       image: null,
-      icon: <FaChalkboardTeacher className="icon" />,
+      icon: <GiChefToque className="staff-icon" style={{ opacity: 0.8 }} />,
     },
 
     {
@@ -430,7 +452,7 @@ const Staff = (props: Props) => {
       name: "NABATANZI FLORENCE",
       position: "COOK",
       image: null,
-      icon: <FaChalkboardTeacher className="icon" />,
+      icon: <GiChefToque className="staff-icon" style={{ opacity: 0.8 }} />,
     },
 
     {
@@ -438,7 +460,7 @@ const Staff = (props: Props) => {
       name: "MUHEREZA WILLIAM",
       position: " COOK",
       image: null,
-      icon: <FaChalkboardTeacher className="icon" />,
+      icon: <GiChefToque className="staff-icon" style={{ opacity: 0.8 }} />,
     },
 
     {
@@ -446,7 +468,9 @@ const Staff = (props: Props) => {
       name: "MUHAIRWE ALFRED",
       position: "ASKARI",
       image: null,
-      icon: <FaChalkboardTeacher className="icon" />,
+      icon: (
+        <GrShieldSecurity className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
     },
 
     {
@@ -454,7 +478,9 @@ const Staff = (props: Props) => {
       name: " EBENU BOSCO",
       position: "ASKARI",
       image: null,
-      icon: <FaChalkboardTeacher className="icon" />,
+      icon: (
+        <GrShieldSecurity className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
     },
 
     {
@@ -462,7 +488,9 @@ const Staff = (props: Props) => {
       name: " BETUNGURA LIVING",
       position: "ASKARI",
       image: null,
-      icon: <FaChalkboardTeacher className="icon" />,
+      icon: (
+        <GrShieldSecurity className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
     },
 
     {
@@ -470,7 +498,9 @@ const Staff = (props: Props) => {
       name: "TWINAMASIKO BRIGHT",
       position: "COMPOUND",
       image: null,
-      icon: <FaChalkboardTeacher className="icon" />,
+      icon: (
+        <MdCleaningServices className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
     },
 
     {
@@ -478,7 +508,9 @@ const Staff = (props: Props) => {
       name: "TWINAMASIKO BRIGHT",
       position: "COMPOUND",
       image: null,
-      icon: <FaChalkboardTeacher className="icon" />,
+      icon: (
+        <MdCleaningServices className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
     },
 
     {
@@ -486,7 +518,9 @@ const Staff = (props: Props) => {
       name: "RUGOGAMU BESTON",
       position: "PORTER",
       image: null,
-      icon: <FaChalkboardTeacher className="icon" />,
+      icon: (
+        <MdCleaningServices className="staff-icon" style={{ opacity: 0.8 }} />
+      ),
     },
   ];
 
@@ -619,24 +653,39 @@ const Staff = (props: Props) => {
                       key={index}
                       className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center min-h-[350px] min-w-[250px]"
                     >
-                      <img
-                        src={teacher?.image ? teacher.image : "userIcon"}
-                        alt={teacher.name}
-                        className="w-24 h-24 rounded-full mb-4"
-                      />
-                      <h2 className="text-xl font-semibold">{teacher.name}</h2>
+                      {teacher?.image ? (
+                        <img
+                          src={teacher?.image ? teacher.image : ""}
+                          alt={teacher.name}
+                          className="w-24 h-24 rounded-full mb-4"
+                        />
+                      ) : (
+                        <div className="w-24 h-24 rounded-full mb-4 flex justify-center items-center">
+                          {teacher.icon}
+                        </div>
+                      )}
+                      <h2 className="text-xl font-semibold p-4 mb-4">
+                        {teacher.name}
+                      </h2>
                       <p className="text-gray-600">{teacher.position}</p>
                     </div>
                   ))}
                 </div>
-                <div className="ml-[-8rem]">
-                  Our Chaplain is a compassionate guide, offering spiritual
-                  support and pastrol care to all members of our school
-                  community. With a listening ear and open heart, they provide
-                  comfort during times of need, foster inclusivity, and promote
-                  personal growth. Dedicated to nurturing the holistic
-                  well-being of students, satff and families, our Chaplain is
-                  here to support you on your Journey.
+                <div className="ml-[-4rem] bg-white px-6 py-4 mt-[-8rem] rounded-md">
+                  <div className="w-full p-6">
+                    <h2 className="w-full text-left text-shadow">
+                      Brief Summary
+                    </h2>
+                  </div>
+                  <div className=" bg-white h-[40%]">
+                    Our Chaplain is a compassionate guide, offering spiritual
+                    support and pastrol care to all members of our school
+                    community. With a listening ear and open heart, they provide
+                    comfort during times of need, foster inclusivity, and
+                    promote personal growth. Dedicated to nurturing the holistic
+                    well-being of students, satff and families, our Chaplain is
+                    here to support you on your Journey.
+                  </div>
                 </div>
               </div>
             </>
@@ -651,11 +700,17 @@ const Staff = (props: Props) => {
                     key={index}
                     className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center"
                   >
-                    <img
-                      src={teacher?.image ? teacher.image : "userIcon"}
-                      alt={teacher.name}
-                      className="w-24 h-24 rounded-full mb-4"
-                    />
+                    {teacher?.image ? (
+                      <img
+                        src={teacher?.image ? teacher.image : ""}
+                        alt={teacher.name}
+                        className="w-24 h-24 rounded-full mb-4"
+                      />
+                    ) : (
+                      <div className="w-24 h-24 rounded-full mb-4 flex justify-center items-center">
+                        {teacher.icon}
+                      </div>
+                    )}
                     <h2 className="text-xl font-semibold">{teacher.name}</h2>
                     <p className="text-gray-600">{teacher.position}</p>
                   </div>
